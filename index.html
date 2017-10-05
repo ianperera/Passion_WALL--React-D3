@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passion Wall</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style.css"/>
+  <!--<script type="text/javascript" src="js/demo.js"></script>-->
+  <script type="text/javascript" src="../scripts/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="../scripts/init.js"></script>
+</head>
+<body>
+
+<div id="container-nav">
+  <div id="container">
+    <div id="header-nav">
+      <div id="header-top">
+        <ul>
+          <li class="menu"><a>Login/Sign Up</a></li>
+          <li class="menu bd"><a>Interested in Hosting?</a></li>
+          <li class="menu"><a>What Are We About?</a></li>
+        </ul>
+      </div>
+      <div id="header-poster">
+        <img src="../img/Banner-The-Passion-Walll.jpg"/>
+        <span>WHAT ARE YOU PASSIONATE ABOUT? </span>
+      </div>
+    </div>
+    <section id="center-nav-default">
+      <div id="center-nav">
+        <div id="search" class="element">
+          <a href=""><img class="icon" src="../img/search_icon.png"/></a>
+          <input type="text" placeholder="SEARCH"/>
+          <a href=""><img class="icon" id="iconClose" src="../img/icon_close.png"/></a>
+        </div>
+        <div id="worldwide">
+          <a href=""><img class="icon" src="../img/small-world.png"/></a>
+          <input type="text" placeholder="WORLDWIDE"/>
+        </div>
+        <div id="smallButton">
+          <div class="element">
+            <a><span>NEWEST</span></a>
+          </div>
+          <div class="element">
+            <a><span>POPULAR</span></a>
+          </div>
+          <div class="element">
+            <a><span>OLEDEST</span></a>
+          </div>
+        </div>
+        <div id="largeButton" class="add_passion_wall">
+          <a><span>ADD TO THE PASSION WALL</span></a>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="center-nav-report">
+        <span>PASSIONS.</span>
+        <span>84</span>
+      </div>
+    </section>
+    <section id="center-nav-compound">
+      <section id="hexagon-image">
+        <canvas id="hexagon-canvas" width="280px" height="240px"></canvas>
+        <canvas id="hexagon-clip-canvas" width="285px" height="240px"></canvas>
+        <section id="overlay"></section>
+        <input id="uploadImage" type="file" name="myPhoto"/>
+        <img id="uploadPreview" />
+      </section>
+      <section id="profile">
+        <section class="element">
+          <section class="subject">
+            <img src="../img/red_star.png"/>
+            <section>I'm Passionate about</section>
+          </section>
+          <section class="content" contenteditable="true" spellcheck="false">
+            <section class="weak">Birds of prey, My kids, old world cultures, choco-</section>
+            <section class="weak">banana--peahnut...</section>
+            <section class="strong">Printmaking and orlgaml</section>
+            <section class="weak">84 char. 69 Char wall.</section>
+          </section>
+        </section>
+        <section class="element">
+          <section class="subject">
+            <img src="../img/red_star.png"/>
+            <section>I Want to try</section>
+          </section>
+          <section class="content" contenteditable="true" spellcheck="false">
+            <section class="weak">Rock climbling, oll painting, world cultures, choco-</section>
+            <section class="weak">banana--peahnut...</section>
+            <section class="strong">Printmaking and orlgaml</section>
+            <section class="weak">84 char. 69 Char wall.</section>
+          </section>
+        </section>
+        <section class="info">
+          <img src="../img/red_star.png"/>
+          <section class="name">LOCATION</section>
+          <section class="caption">
+            <select class="units">
+              <option value="Metres">Washington D.C., United States</option>
+              <option value="Feet">Feet</option>
+              <option value="Fathoms">Fathoms</option>
+            </select>
+          </section>
+        </section>
+        <section class="info">
+          <section class="name indent">TAGS</section>
+          <section class="caption high" id="tagSection">
+            <section id="tagCollection">
+              <button type="submit" class="button" value="MyPassion">
+                MyPassion
+              </button>
+            </section>
+
+            <input id="tag" class="inputInfo" type="text" placeholder="Brazil, Carnival..." />
+          </section>
+        </section>
+        <section class="info" id="sign">
+          <section class="name indent">Sign in with</section>
+          <section class="imgGroup">
+            <img src="../img/icon_facebook.png"/>
+            <img src="../img/icon_twitter.png"/>
+            <img src="../img/icon_google.png"/>
+          </section>
+          <section class="caption">
+            <input id="email" class="inputInfo" type="text" placeholder="Email" />
+          </section>
+        </section>
+        <section class="right-report show_register">
+          <a id="needAccount">Need an Account?</a>
+        </section>
+        <section id="accountRegister">
+          <section id="signPoster">Sign Up with</section>
+          <section id="signImage">
+            <img src="../img/icon_facebook_red.png"/>
+            <img src="../img/icon_twitter_red.png"/>
+            <img src="../img/icon_google_red.png"/>
+          </section>
+          <section id="signOr">
+            ~ or ~
+          </section>
+          <section id="signInfo" class="personal">
+            <section class="personalInfo">
+              <input type="text" id="signName" class="signInfoInput" placeholder="Karen Lian (Karen L. shown)"/>
+              <label for="signName">Name</label>
+            </section>
+            <section class="personalInfo">
+              <input type="text" id="signEmail" class="signInfoInput"/>
+              <label for="signEmail">Email</label>
+            </section>
+            <section class="personalInfo">
+              <input type="text" id="signPassword" class="signInfoInput"/>
+              <label for="signPassword">Password</label>
+            </section>
+            <section id="signAgree">
+              <input type="checkbox" id="signCheck">
+              <label for="signCheck">I agree  with <a>PassionDig's</a><a> Terms of Use</a></label>
+              <button id="signMeButton">SIGN ME UP</button>
+              </input>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <div id="chartContent">
+      <a class="arrow_btn arrow_down" >
+        <img src="img/red_narrow.png" />
+      </a>
+      <a class="arrow_btn arrow_up" >
+        <img src="img/red_narrow_upload.png" />
+      </a>
+      <div id="chart"></div>
+      <div id="hexagon-wall"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
